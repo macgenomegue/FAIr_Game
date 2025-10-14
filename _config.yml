@@ -32,10 +32,10 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
+  copyright: Guerrino Macori
+  location: University College Dublin
+  social: Connect with us
+  credits: The project has been supported by UCD, through funding from the National Forum/Higher Education Authority under the Strategic Alignment of Teaching and Learning Enhancement Fund (SATLE)
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
