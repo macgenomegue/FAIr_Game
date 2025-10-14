@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Scenarios Section -->
 <section class="page-section" id="scenarios">
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Scenarios</h2>
@@ -14,7 +15,7 @@ layout: default
 
       <!-- Administrative Staff -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalAdmin">
+        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalAdmin">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
@@ -24,7 +25,7 @@ layout: default
 
       <!-- Academic Staff -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalAcademic">
+        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalAcademic">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
@@ -34,7 +35,7 @@ layout: default
 
       <!-- Students -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalStudents">
+        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalStudents">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
@@ -48,11 +49,11 @@ layout: default
 
 <!-- Modals -->
 
-<!-- Modal for Administrative Staff -->
-<div class="portfolio-modal modal fade" id="modalAdmin" tabindex="-1" aria-hidden="true">
+<!-- Modal for Admin -->
+<div class="portfolio-modal modal fade" id="modalAdmin" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
       <div class="modal-body">
         <h2 class="text-uppercase">Administrative Staff Scenarios</h2>
         <div id="contentAdmin">
@@ -63,11 +64,11 @@ layout: default
   </div>
 </div>
 
-<!-- Modal for Academic Staff -->
-<div class="portfolio-modal modal fade" id="modalAcademic" tabindex="-1" aria-hidden="true">
+<!-- Modal for Academic -->
+<div class="portfolio-modal modal fade" id="modalAcademic" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
       <div class="modal-body">
         <h2 class="text-uppercase">Academic Staff Scenarios</h2>
         <div id="contentAcademic">
@@ -79,10 +80,10 @@ layout: default
 </div>
 
 <!-- Modal for Students -->
-<div class="portfolio-modal modal fade" id="modalStudents" tabindex="-1" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="modalStudents" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></div>
+      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
       <div class="modal-body">
         <h2 class="text-uppercase">Student Scenarios</h2>
         <div id="contentStudents">
