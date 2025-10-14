@@ -1,40 +1,26 @@
-<!-- Portfolio Modals -->
-{% for post in site.posts %}
-  <div class="modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">{{ post.title }}</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          {% if post.img %}
-            <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" class="img-fluid mb-3" alt="{{ post.alt }}">
-          {% endif %}
-          {% if post.description %}
-            <p>{{ post.description }}</p>
-          {% endif %}
-          <!-- Insert full markdown content -->
-          <div class="post-content">
-            {{ post.content }}
-          </div>
-          <hr>
-          <ul class="list-unstyled">
-            {% if post.client %}
-              <li><strong>Client:</strong> {{ post.client }}</li>
-            {% endif %}
-            {% if post.project-date %}
-              <li><strong>Date:</strong> {{ post.project-date }}</li>
-            {% endif %}
-            {% if post.category %}
-              <li><strong>Category:</strong> {{ post.category }}</li>
-            {% endif %}
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
+<!-- Admin Modal -->
+<div class="portfolio-modal modal fade" id="modalAdmin" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      {% include admin_scenarios.html %}
     </div>
   </div>
-{% endfor %}
+</div>
+
+<!-- Academic Modal -->
+<div class="portfolio-modal modal fade" id="modalAcademic" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      {% include academic_scenarios.html %}
+    </div>
+  </div>
+</div>
+
+<!-- Student Modal -->
+<div class="portfolio-modal modal fade" id="modalStudents" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      {% include student_scenarios.html %}
+    </div>
+  </div>
+</div>

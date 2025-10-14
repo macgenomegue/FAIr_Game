@@ -1,29 +1,33 @@
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="success">
+<section id="scenarios">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2>Scenarios</h2>
-        <hr class="star-light">
+        <hr class="star-primary">
       </div>
     </div>
     <div class="row">
-      {% for post in site.posts %}
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal-{{ post.modal-id }}">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-fluid" alt="{{ post.alt }}">
+      <!-- Admin Scenarios -->
+      <div class="col-sm-4 portfolio-item">
+        <a href="#modalAdmin" class="portfolio-link" data-bs-toggle="modal">
+          <img src="img/portfolio/admin.png" class="img-responsive" alt="Admin icon">
         </a>
-        <div class="portfolio-caption">
-          <h4>{{ post.title }}</h4>
-          <p class="text-muted">{{ post.category }}</p>
-        </div>
       </div>
-      {% endfor %}
+
+      <!-- Academic Scenarios -->
+      <div class="col-sm-4 portfolio-item">
+        <a href="#modalAcademic" class="portfolio-link" data-bs-toggle="modal">
+          <img src="img/portfolio/academic.png" class="img-responsive" alt="Academic icon">
+        </a>
+      </div>
+
+      <!-- Student Scenarios -->
+      <div class="col-sm-4 portfolio-item">
+        <a href="#modalStudents" class="portfolio-link" data-bs-toggle="modal">
+          <img src="img/portfolio/students.png" class="img-responsive" alt="Students icon">
+        </a>
+      </div>
     </div>
   </div>
 </section>
