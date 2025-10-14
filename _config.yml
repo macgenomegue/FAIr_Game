@@ -1,7 +1,8 @@
 # Site settings
 title: FAIr Game
 email: your-email@domain.com
-url: https://macgenomegue.github.io/FAIr_Game/
+url: "https://macgenomegue.github.io"
+baseurl: "/FAIr_Game"
 description: "Explore interactive scenarios on academic integrity and ethical dilemmas with the SATLE-funded Fair Game project. Engage with gamified learning, test your decision-making skills, and enhance your understanding of responsible research and ethics in academia. Join us in fostering a culture of integrity and ethical awareness!"
 keywords: "Academic Integrity, Ethical Dilemmas,	Gamified Learning,	Research Ethics,	Responsible Conduct in Research, Higher Education Ethics, Integrity Training,	Ethical Decision-Making separated by commas"
 skills: "Testing Academic Integrity"
