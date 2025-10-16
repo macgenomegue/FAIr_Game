@@ -3,7 +3,7 @@ layout: default
 modal-id: 3
 title: Academic Staff
 date: 2025-10-14
-img: academic.png
+img: academics.png
 alt: Academic Staff
 project-date: October 2025
 client: Academic
