@@ -5,25 +5,21 @@
 <body id="page-top" class="index">
   {% include nav.html %}
   {% include header.html %}
-<<<<<<< HEAD
+
   {{ content }}
+
   {% include about.html %}
 
-=======
-  {{ content }}
-  {% include about.html %}
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
   {% if site.contact == "static" %}
-  {% include contact_static.html %}
+    {% include contact_static.html %}
   {% elsif site.contact == "disqus" %}
-  {% include contact_disqus.html %}
+    {% include contact_disqus.html %}
   {% else %}
-  {% include contact.html %}
+    {% include contact.html %}
   {% endif %}
 
   {% include footer.html %}
   {% include modals.html %}
   {% include js.html %}
 </body>
-
 </html>

@@ -13,9 +13,6 @@ google_verify:
 bing_verify:
 
 # Contact form
-# Options:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
 contact: static
 
 # Disqus settings (optional)
@@ -47,7 +44,7 @@ social:
 # Postal address
 address:
   - line: UCD SATLE Project
-  - line: 
+  - line:
 
 # Credits text
 credits: "The project has been supported by UCD, through funding from the National Forum/Higher Education Authority under the Strategic Alignment of Teaching and Learning Enhancement Fund (SATLE)."
