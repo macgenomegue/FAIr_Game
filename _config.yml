@@ -1,109 +1,65 @@
 # Site settings
-<<<<<<< HEAD
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
-=======
 title: FAIr Game
 email: your-email@domain.com
 url: "https://macgenomegue.github.io"
 baseurl: "/FAIr_Game"
 description: "Explore interactive scenarios on academic integrity and ethical dilemmas with the SATLE-funded Fair Game project. Engage with gamified learning, test your decision-making skills, and enhance your understanding of responsible research and ethics in academia. Join us in fostering a culture of integrity and ethical awareness!"
-keywords: "Academic Integrity, Ethical Dilemmas,	Gamified Learning,	Research Ethics,	Responsible Conduct in Research, Higher Education Ethics, Integrity Training,	Ethical Decision-Making separated by commas"
+keywords: "Academic Integrity, Ethical Dilemmas, Gamified Learning, Research Ethics, Responsible Conduct in Research, Higher Education Ethics, Integrity Training, Ethical Decision-Making"
 skills: "Testing Academic Integrity"
 meta_author: Guerrino Macori
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
 
 # Google webmaster tools
 google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
+# Contact form
+# Options:
+# - static : pass through formspree.io to validate email sending
 # - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
 contact: static
 
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
+# Disqus settings (optional)
 disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 18bc9c
+  primary-rgb: "24,188,156"
+  secondary: 2c3e50
+  secondary-dark: 233140
 
 # Footer settings
 footer:
-<<<<<<< HEAD
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
-=======
   copyright: SATLE Team
   location: University College Dublin
   social: Connect with us
   credits: Fundings
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks
 social:
   - title: twitter
-<<<<<<< HEAD
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
-=======
-    url: http://twitter.com/guerrinomacori
+    url: "http://twitter.com/guerrinomacori"
   - title: facebook
     url:
   - title: github
-    url: http://github.com/macgenomegue
+    url: "http://github.com/macgenomegue"
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
   - line: UCD SATLE Project
   - line: 
 
-# Credits content
-credits: 'The project has been supported by UCD, through funding from the National Forum/Higher Education Authority under the Strategic Alignment of Teaching and Learning Enhancement Fund (SATLE)' 
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
+# Credits text
+credits: "The project has been supported by UCD, through funding from the National Forum/Higher Education Authority under the Strategic Alignment of Teaching and Learning Enhancement Fund (SATLE)."
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-#for posts
+# Post defaults
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
-<<<<<<< HEAD
       permalink: ""
-=======
-      permalink: ""
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
