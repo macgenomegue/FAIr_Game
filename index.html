@@ -2,10 +2,11 @@
 layout: default
 ---
 
+<!-- Scenarios Section -->
 <section id="scenarios" class="portfolio">
   <div class="container">
     <div class="text-center">
-      <h2 class="text-uppercase">Scenarios</h2>
+      <h2 class="text-uppercase text-secondary mb-0">Scenarios</h2>
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon"><i class="fas fa-brain"></i></div>
@@ -16,7 +17,7 @@ layout: default
     <div class="row">
       {% for post in site.posts %}
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+        <a href="#scenarioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">
             <div class="caption-content">
               <i class="fa fa-search-plus fa-3x"></i>
@@ -31,8 +32,9 @@ layout: default
   </div>
 </section>
 
+<!-- Scenario Modals -->
 {% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="scenarioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr"><div class="rl"></div></div>
