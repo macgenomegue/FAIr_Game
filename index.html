@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Scenarios
 ---
 
-<section id="scenarios" class="page-section">
+<section id="portfolio" class="portfolio">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Scenarios</h2>
-        <hr class="star-primary">
+    <div class="text-center">
+      <h2 class="text-uppercase">Scenarios</h2>
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-brain"></i></div>
+        <div class="divider-custom-line"></div>
       </div>
     </div>
 
-    <div class="row text-center">
-      {% assign scenarios = site.posts | sort: 'modal-id' %}
-      {% for post in scenarios %}
+    <div class="row">
+      {% for post in site.posts %}
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">
@@ -24,7 +24,7 @@ title: Scenarios
           </div>
           <img src="{{ 'img/portfolio/' | append: post.img | relative_url }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
-        <h4>{{ post.title }}</h4>
+        <h4 class="text-center">{{ post.title }}</h4>
       </div>
       {% endfor %}
     </div>

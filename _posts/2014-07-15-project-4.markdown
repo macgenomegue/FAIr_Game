@@ -2,7 +2,12 @@
 layout: default
 modal-id: 1
 title: Students
-img: students.png
+date: 2025-10-14
+img: student.png
 alt: Students
-description: Ethical dilemmas for students.
+project-date: October 2025
+client: Students
+category: Academic Integrity
+description: |
+  Scenarios focused on student experiences with academic integrity and ethical dilemmas.
 ---
