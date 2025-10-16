@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-<!-- Portfolio Modals -->
+<!-- Scenario Modals -->
 {% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
-  aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
-        <div class="rl">
-        </div>
+        <div class="rl"></div>
       </div>
     </div>
     <div class="container">
@@ -17,28 +14,13 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
             <p>{{ post.description }}</p>
-            {% endif %}
             <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
-              {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
-              {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
-              </li>
-              {% endif %}
+              <li><strong>{{ post.client }}</strong></li>
+              <li>{{ post.project-date }}</li>
+              <li>{{ post.category }}</li>
             </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
           </div>
         </div>
       </div>
@@ -46,31 +28,3 @@
   </div>
 </div>
 {% endfor %}
-=======
-<!-- Admin Modal -->
-<div class="portfolio-modal modal fade" id="modalAdmin" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      {% include admin_scenarios.html %}
-    </div>
-  </div>
-</div>
-
-<!-- Academic Modal -->
-<div class="portfolio-modal modal fade" id="modalAcademic" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      {% include academic_scenarios.html %}
-    </div>
-  </div>
-</div>
-
-<!-- Student Modal -->
-<div class="portfolio-modal modal fade" id="modalStudents" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      {% include student_scenarios.html %}
-    </div>
-  </div>
-</div>
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
