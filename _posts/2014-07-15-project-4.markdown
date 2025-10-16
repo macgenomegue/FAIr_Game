@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 1
+date: 2025-10-16
+img: students.png
+alt: image-alt
+project-date: October 2025
+client: SATLE Project
+category: Academic Integrity
+description: >
+  This group covers student-related dilemmas, including:
+  - Plagiarism in assignments
+  - Collaboration boundaries
+  - Use of AI tools
+---
