@@ -1,14 +1,8 @@
 ---
 layout: default
-<<<<<<< HEAD
----
-=======
-title: FAIr Game
 ---
 
-
-<!-- Scenarios Section -->
-<section class="page-section" id="scenarios">
+<section class="page-section portfolio" id="scenarios">
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Scenarios</h2>
     <div class="divider-custom">
@@ -16,86 +10,39 @@ title: FAIr Game
       <div class="divider-custom-icon"><i class="fas fa-brain"></i></div>
       <div class="divider-custom-line"></div>
     </div>
+
     <div class="row justify-content-center">
 
       <!-- Administrative Staff -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalAdmin">
+        <div class="portfolio-item mx-auto" onclick="window.location.href='admin.html'">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
-          <img class="img-fluid" src="img/portfolio/admin.png" alt="Admin Staff" />
+          <img class="img-fluid" src="img/portfolio/admin.png" alt="Administrative Scenarios" />
         </div>
       </div>
 
       <!-- Academic Staff -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalAcademic">
+        <div class="portfolio-item mx-auto" onclick="window.location.href='academic.html'">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
-          <img class="img-fluid" src="img/portfolio/academic.png" alt="Academic Staff" />
+          <img class="img-fluid" src="img/portfolio/academic.png" alt="Academic Scenarios" />
         </div>
       </div>
 
       <!-- Students -->
       <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#modalStudents">
+        <div class="portfolio-item mx-auto" onclick="window.location.href='students.html'">
           <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             <div class="portfolio-item-caption-content text-center text-white">View</div>
           </div>
-          <img class="img-fluid" src="img/portfolio/student.png" alt="Students" />
+          <img class="img-fluid" src="img/portfolio/student.png" alt="Student Scenarios" />
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
-<!-- Modals -->
-
-<!-- Modal for Admin -->
-<div class="portfolio-modal modal fade" id="modalAdmin" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
-      <div class="modal-body">
-        <h2 class="text-uppercase">Administrative Staff Scenarios</h2>
-        <div id="contentAdmin">
-          {% include admin_scenarios.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal for Academic -->
-<div class="portfolio-modal modal fade" id="modalAcademic" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
-      <div class="modal-body">
-        <h2 class="text-uppercase">Academic Staff Scenarios</h2>
-        <div id="contentAcademic">
-          {% include academic_scenarios.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal for Students -->
-<div class="portfolio-modal modal fade" id="modalStudents" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal"><i class="fas fa-times"></i></div>
-      <div class="modal-body">
-        <h2 class="text-uppercase">Student Scenarios</h2>
-        <div id="contentStudents">
-          {% include student_scenarios.html %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div> 
->>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
