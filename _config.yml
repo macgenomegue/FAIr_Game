@@ -1,4 +1,5 @@
 # Site settings
+<<<<<<< HEAD
 title: Freelancer
 email: your-email@domain.com
 url: https://github.com/jeromelachaud/freelancer-theme
@@ -6,6 +7,16 @@ description: "Write an awesome description for your new site here. You can edit 
 keywords: "your keywords, separated by commas"
 skills: "Web Developer - Graphic Artist - User Experience Designer"
 meta_author: LastName FirstName
+=======
+title: FAIr Game
+email: your-email@domain.com
+url: "https://macgenomegue.github.io"
+baseurl: "/FAIr_Game"
+description: "Explore interactive scenarios on academic integrity and ethical dilemmas with the SATLE-funded Fair Game project. Engage with gamified learning, test your decision-making skills, and enhance your understanding of responsible research and ethics in academia. Join us in fostering a culture of integrity and ethical awareness!"
+keywords: "Academic Integrity, Ethical Dilemmas,	Gamified Learning,	Research Ethics,	Responsible Conduct in Research, Higher Education Ethics, Integrity Training,	Ethical Decision-Making separated by commas"
+skills: "Testing Academic Integrity"
+meta_author: Guerrino Macori
+>>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
 
 # Google webmaster tools
 google_verify:
@@ -32,14 +43,22 @@ color:
 
 # Footer settings
 footer:
+<<<<<<< HEAD
   copyright: Dr. Henry Jekyll
   location: Location
   social: Around the Web
   credits: Credits
+=======
+  copyright: SATLE Team
+  location: University College Dublin
+  social: Connect with us
+  credits: Fundings
+>>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
+<<<<<<< HEAD
     url: http://twitter.com/jekyllrb
   - title: facebook
     url:
@@ -57,6 +76,21 @@ address:
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+=======
+    url: http://twitter.com/guerrinomacori
+  - title: facebook
+    url:
+  - title: github
+    url: http://github.com/macgenomegue
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: UCD SATLE Project
+  - line: 
+
+# Credits content
+credits: 'The project has been supported by UCD, through funding from the National Forum/Higher Education Authority under the Strategic Alignment of Teaching and Learning Enhancement Fund (SATLE)' 
+>>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
 
 # Build settings
 markdown: kramdown
@@ -68,4 +102,8 @@ defaults:
       path: ""
       type: "posts"
     values:
+<<<<<<< HEAD
       permalink: ""
+=======
+      permalink: ""
+>>>>>>> 69518ffa4e1bb66e125b77cc35938826fd134438
