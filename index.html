@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Scenarios
 ---
 
 <section id="scenarios" class="page-section">
@@ -10,9 +11,11 @@ layout: default
         <hr class="star-primary">
       </div>
     </div>
-    <div class="portfolio-flex-row">
-      {% for post in site.posts %}
-      <div class="portfolio-flex-item portfolio-item">
+
+    <div class="row text-center">
+      {% assign scenarios = site.posts | sort: 'modal-id' %}
+      {% for post in scenarios %}
+      <div class="col-md-4 col-sm-6 portfolio-item">
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">
             <div class="caption-content">
@@ -21,13 +24,13 @@ layout: default
           </div>
           <img src="{{ 'img/portfolio/' | append: post.img | relative_url }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
+        <h4>{{ post.title }}</h4>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- Portfolio Modals -->
 {% for post in site.posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
@@ -38,24 +41,13 @@ layout: default
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ post.title | default: post.category }}</h2>
+            <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="{{ 'img/portfolio/' | append: post.img | relative_url }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
             <p>{{ post.description }}</p>
-            {% endif %}
-            <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client: <strong>{{ post.client }}</strong></li>
-              {% endif %}
-              {% if post.project-date %}
-              <li>Date: <strong>{{ post.project-date }}</strong></li>
-              {% endif %}
-              {% if post.category %}
-              <li>Service: <strong>{{ post.category }}</strong></li>
-              {% endif %}
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times"></i> Close
+            </button>
           </div>
         </div>
       </div>
