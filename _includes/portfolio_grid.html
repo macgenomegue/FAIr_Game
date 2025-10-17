@@ -8,9 +8,10 @@
       </div>
     </div>
 
-    <!-- Grid of scenario cards (from posts) -->
+    <!-- Grid of scenario cards (only posts that define modal-id), ordered Student(1), Admin(2), Academic(3) -->
     <div class="portfolio-flex-row">
-      {% for post in site.posts %}
+      {% assign cards = site.posts | where_exp:'p','p.modal-id' | sort:'modal-id' %}
+      {% for post in cards %}
       <div class="portfolio-flex-item portfolio-item">
         <a href="{{ post.url | relative_url }}" class="portfolio-link">
           <div class="caption">
@@ -24,12 +25,11 @@
       {% endfor %}
     </div>
 
-    <!-- Direct links to full scenario pages -->
+    <!-- Direct links to full scenario pages in the requested order: Student, Admin, Academic -->
     <div class="text-center" style="margin-top: 50px;">
-      <a href="{{ '/student_scenarios/' | relative_url }}" class="btn btn-primary btn-lg" style="margin: 10px;">View all Student Scenarios</a>
-      <a href="{{ '/academic_scenarios/' | relative_url }}" class="btn btn-primary btn-lg" style="margin: 10px;">View all Academic Scenarios</a>
-      <a href="{{ '/admin_scenarios/' | relative_url }}" class="btn btn-primary btn-lg" style="margin: 10px;">View all Admin Scenarios</a>
+      <a href="{{ '/student_scenarios/'  | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Student Scenarios</a>
+      <a href="{{ '/admin_scenarios/'    | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Admin Scenarios</a>
+      <a href="{{ '/academic_scenarios/' | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Academic Scenarios</a>
     </div>
-
   </div>
 </section>
