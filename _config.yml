@@ -54,3 +54,8 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+      
+collections:
+  pages:
+    output: true
+    permalink: /:path/
