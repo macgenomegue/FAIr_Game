@@ -11,4 +11,3 @@ category: Research Integrity
 description: |
   Scenarios for academic staff covering research integrity, supervision, and ethical leadership in higher education.
 ---
-<p><a href="{{ site.baseurl }}/academic_scenarios/" class="btn btn-primary">View all Academic Scenarios</a></p>
