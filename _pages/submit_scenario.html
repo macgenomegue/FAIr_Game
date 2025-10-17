@@ -1,0 +1,55 @@
+---
+layout: default
+title: Submit a Scenario
+permalink: /submit_scenario/
+---
+
+<section id="submit-scenario">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <h2>Submit a Scenario</h2>
+        <hr class="star-primary">
+        <img src="{{ site.baseurl }}/img/portfolio/submarine.png" alt="Submit Scenario" class="img-responsive center-block" style="max-width:250px;margin:20px auto;">
+        <p>Contribute to the <strong>Fair Game</strong> project by submitting a real or hypothetical ethical scenario related to academic integrity. Your input helps keep the project current and reflective of real challenges faced by students and staff.</p>
+      </div>
+    </div>
+
+    <form action="https://formspree.io/f/xrbyjoww" method="POST" style="max-width:600px;margin:40px auto;">
+      <div class="form-group">
+        <label for="name">Your Name (optional)</label>
+        <input type="text" id="name" name="name" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email (optional, for follow-up)</label>
+        <input type="email" id="email" name="_replyto" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="role">Your Role</label>
+        <select id="role" name="role" class="form-control" required>
+          <option value="">Select your role</option>
+          <option value="Student">Student</option>
+          <option value="Academic Staff">Academic Staff</option>
+          <option value="Administrative Staff">Administrative Staff</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="scenario">Describe the Scenario</label>
+        <textarea id="scenario" name="scenario" rows="6" class="form-control" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="ethical">What Would Be the Ethical Choice?</label>
+        <textarea id="ethical" name="ethical" rows="4" class="form-control"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg">Submit Scenario</button>
+      </div>
+    </form>
+  </div>
+</section>
