@@ -8,39 +8,28 @@
       </div>
     </div>
 
+    <!-- Grid of scenario cards (ordered Student(1), Admin(2), Academic(3)) -->
     <div class="portfolio-flex-row">
+      {% assign cards = site.posts | where_exp:'p','p.modal-id' | sort:'modal-id' %}
+      {% for post in cards %}
       <div class="portfolio-flex-item portfolio-item">
-        <a href="{{ site.baseurl }}/student_scenarios/" class="portfolio-link">
+        <a href="{{ post.url | relative_url }}" class="portfolio-link">
           <div class="caption">
-            <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
           </div>
-          <img src="{{ site.baseurl }}/img/portfolio/students.png" class="img-responsive" alt="Student Scenarios">
+          <img src="{{ site.baseurl }}/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
       </div>
-
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="{{ site.baseurl }}/admin_scenarios/" class="portfolio-link">
-          <div class="caption">
-            <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
-          </div>
-          <img src="{{ site.baseurl }}/img/portfolio/admin.png" class="img-responsive" alt="Admin Scenarios">
-        </a>
-      </div>
-
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="{{ site.baseurl }}/academic_scenarios/" class="portfolio-link">
-          <div class="caption">
-            <div class="caption-content"><i class="fa fa-search-plus fa-3x"></i></div>
-          </div>
-          <img src="{{ site.baseurl }}/img/portfolio/academics.png" class="img-responsive" alt="Academic Scenarios">
-        </a>
-      </div>
+      {% endfor %}
     </div>
 
-    <div class="text-center" style="margin-top:20px;">
-      <a href="{{ site.baseurl }}/student_scenarios/" class="btn btn-lg btn-outline">View all Student Scenarios</a>
-      <a href="{{ site.baseurl }}/admin_scenarios/" class="btn btn-lg btn-outline">View all Admin Scenarios</a>
-      <a href="{{ site.baseurl }}/academic_scenarios/" class="btn btn-lg btn-outline">View all Academic Scenarios</a>
+    <!-- Direct links to full scenario pages -->
+    <div class="text-center" style="margin-top: 50px;">
+      <a href="{{ '/student_scenarios/'  | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Student Scenarios</a>
+      <a href="{{ '/admin_scenarios/'    | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Admin Scenarios</a>
+      <a href="{{ '/academic_scenarios/' | relative_url }}" class="btn btn-primary btn-lg" style="margin:10px;">View all Academic Scenarios</a>
     </div>
   </div>
 </section>
