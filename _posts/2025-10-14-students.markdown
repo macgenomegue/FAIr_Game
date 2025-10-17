@@ -11,3 +11,4 @@ category: Academic Integrity
 description: |
   Scenarios focused on student experiences with academic integrity and ethical dilemmas.
 ---
+<p><a href="{{ site.baseurl }}/student_scenarios/" class="btn btn-primary">View all Student Scenarios</a></p>

@@ -11,3 +11,4 @@ category: Ethics
 description: |
   Scenarios for administrative staff exploring integrity, responsibility, and fairness in academic operations.
 ---
+<p><a href="{{ site.baseurl }}/admin_scenarios/" class="btn btn-primary">View all Admin Scenarios</a></p>
